@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23A061AE26C67FCD002B0AA0 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A061AC26C67FCD002B0AA0 /* ApiManager.swift */; };
+		23A061AF26C67FCD002B0AA0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A061AD26C67FCD002B0AA0 /* NetworkManager.swift */; };
+		23F3734626C529AC0002E145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F3734526C529AC0002E145 /* AppDelegate.swift */; };
+		23F3734826C529AC0002E145 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F3734726C529AC0002E145 /* SceneDelegate.swift */; };
+		23F3734A26C529AC0002E145 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F3734926C529AC0002E145 /* MainViewController.swift */; };
+		23F3734D26C529AC0002E145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F3734B26C529AC0002E145 /* Main.storyboard */; };
+		23F3734F26C529B00002E145 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F3734E26C529B00002E145 /* Assets.xcassets */; };
+		23F3735226C529B00002E145 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F3735026C529B00002E145 /* LaunchScreen.storyboard */; };
+		23F3735D26C530330002E145 /* PasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F3735B26C530330002E145 /* PasscodeViewController.swift */; };
+		23F3735E26C530330002E145 /* PasscodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23F3735C26C530330002E145 /* PasscodeViewController.xib */; };
+		23F3736426C533460002E145 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F3736326C533460002E145 /* AuthController.swift */; };
+		23F3736D26C584FA0002E145 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F3736C26C584FA0002E145 /* KeychainService.swift */; };
+		23F3737226C58DF80002E145 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F3737126C58DF80002E145 /* UserModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		23A061AC26C67FCD002B0AA0 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		23A061AD26C67FCD002B0AA0 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		23F3734226C529AC0002E145 /* AuthFaceID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthFaceID.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F3734526C529AC0002E145 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23F3734726C529AC0002E145 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		23F3734926C529AC0002E145 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		23F3734C26C529AC0002E145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23F3734E26C529B00002E145 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23F3735126C529B00002E145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23F3735326C529B00002E145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23F3735B26C530330002E145 /* PasscodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeViewController.swift; sourceTree = "<group>"; };
+		23F3735C26C530330002E145 /* PasscodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasscodeViewController.xib; sourceTree = "<group>"; };
+		23F3736326C533460002E145 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
+		23F3736C26C584FA0002E145 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		23F3737126C58DF80002E145 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23F3733F26C529AC0002E145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23A061B126C67FDA002B0AA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23A061AC26C67FCD002B0AA0 /* ApiManager.swift */,
+				23A061AD26C67FCD002B0AA0 /* NetworkManager.swift */,
+				23F3736326C533460002E145 /* AuthController.swift */,
+				23F3736C26C584FA0002E145 /* KeychainService.swift */,
+				23F3737126C58DF80002E145 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23F3733926C529AC0002E145 = {
+			isa = PBXGroup;
+			children = (
+				23F3734426C529AC0002E145 /* AuthFaceID */,
+				23F3734326C529AC0002E145 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23F3734326C529AC0002E145 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23F3734226C529AC0002E145 /* AuthFaceID.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23F3734426C529AC0002E145 /* AuthFaceID */ = {
+			isa = PBXGroup;
+			children = (
+				23F3734526C529AC0002E145 /* AppDelegate.swift */,
+				23F3734726C529AC0002E145 /* SceneDelegate.swift */,
+				23A061B126C67FDA002B0AA0 /* Model */,
+				23F3736126C532D60002E145 /* View */,
+				23F3736026C532A50002E145 /* Controller */,
+				23F3734E26C529B00002E145 /* Assets.xcassets */,
+				23F3735026C529B00002E145 /* LaunchScreen.storyboard */,
+				23F3735326C529B00002E145 /* Info.plist */,
+			);
+			path = AuthFaceID;
+			sourceTree = "<group>";
+		};
+		23F3736026C532A50002E145 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23F3734926C529AC0002E145 /* MainViewController.swift */,
+				23F3735B26C530330002E145 /* PasscodeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23F3736126C532D60002E145 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				23F3734B26C529AC0002E145 /* Main.storyboard */,
+				23F3735C26C530330002E145 /* PasscodeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23F3734126C529AC0002E145 /* AuthFaceID */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23F3735626C529B00002E145 /* Build configuration list for PBXNativeTarget "AuthFaceID" */;
+			buildPhases = (
+				23F3733E26C529AC0002E145 /* Sources */,
+				23F3733F26C529AC0002E145 /* Frameworks */,
+				23F3734026C529AC0002E145 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AuthFaceID;
+			productName = AuthFaceID;
+			productReference = 23F3734226C529AC0002E145 /* AuthFaceID.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23F3733A26C529AC0002E145 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					23F3734126C529AC0002E145 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 23F3733D26C529AC0002E145 /* Build configuration list for PBXProject "AuthFaceID" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23F3733926C529AC0002E145;
+			productRefGroup = 23F3734326C529AC0002E145 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23F3734126C529AC0002E145 /* AuthFaceID */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23F3734026C529AC0002E145 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F3735E26C530330002E145 /* PasscodeViewController.xib in Resources */,
+				23F3735226C529B00002E145 /* LaunchScreen.storyboard in Resources */,
+				23F3734F26C529B00002E145 /* Assets.xcassets in Resources */,
+				23F3734D26C529AC0002E145 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23F3733E26C529AC0002E145 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A061AF26C67FCD002B0AA0 /* NetworkManager.swift in Sources */,
+				23A061AE26C67FCD002B0AA0 /* ApiManager.swift in Sources */,
+				23F3736426C533460002E145 /* AuthController.swift in Sources */,
+				23F3737226C58DF80002E145 /* UserModel.swift in Sources */,
+				23F3735D26C530330002E145 /* PasscodeViewController.swift in Sources */,
+				23F3734A26C529AC0002E145 /* MainViewController.swift in Sources */,
+				23F3736D26C584FA0002E145 /* KeychainService.swift in Sources */,
+				23F3734626C529AC0002E145 /* AppDelegate.swift in Sources */,
+				23F3734826C529AC0002E145 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		23F3734B26C529AC0002E145 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23F3734C26C529AC0002E145 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		23F3735026C529B00002E145 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23F3735126C529B00002E145 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23F3735426C529B00002E145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23F3735526C529B00002E145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23F3735726C529B00002E145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJ5QP936CK;
+				INFOPLIST_FILE = AuthFaceID/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Blashko-Maksim.AuthFaceID";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23F3735826C529B00002E145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJ5QP936CK;
+				INFOPLIST_FILE = AuthFaceID/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Blashko-Maksim.AuthFaceID";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23F3733D26C529AC0002E145 /* Build configuration list for PBXProject "AuthFaceID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23F3735426C529B00002E145 /* Debug */,
+				23F3735526C529B00002E145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23F3735626C529B00002E145 /* Build configuration list for PBXNativeTarget "AuthFaceID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23F3735726C529B00002E145 /* Debug */,
+				23F3735826C529B00002E145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23F3733A26C529AC0002E145 /* Project object */;
+}
