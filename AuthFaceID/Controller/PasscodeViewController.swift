@@ -9,7 +9,7 @@ import UIKit
 
 class PasscodeViewController: UIViewController {
 
-    private let authController = AuthController.shared
+    private let authController = AuthController()
     
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -42,6 +42,7 @@ class PasscodeViewController: UIViewController {
         }
     }
     
+    /// checks if the user is authorised and offers to enter the app using biometric data
     private func userIsAlreadyLoggedIn() {
         let currentUser = authController.getCurrentUser(key: .currentUser)
         if !currentUser.isEmpty {

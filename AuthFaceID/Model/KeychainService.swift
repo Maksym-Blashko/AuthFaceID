@@ -10,9 +10,6 @@ import Security
 
 class KeychainService {
     
-    static let shared = KeychainService()
-    private init() {}
-    
     func save(_ password: String, for account: String) {
         let password = password.data(using: String.Encoding.utf8)!
         let query: [String: Any] = [kSecClass as String: kSecClassGenericPassword,

@@ -8,10 +8,8 @@
 import Foundation
 
 class NetworkManager {
-    
-    static let shared = NetworkManager()
-    private init() { }
-    
+
+    /// Executes a request using a URLSession
     func performRequest(url: String, success: @escaping (Data)->(), failure: @escaping (Error?)->()) {
         
         guard let url = URL(string: url) else { failure(nil); return }

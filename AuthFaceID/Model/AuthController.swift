@@ -14,14 +14,10 @@ enum CashKey: String {
 
 class AuthController {
     
-    static let shared = AuthController()
-    private let keychainService = KeychainService.shared
-    private let apiManager = ApiManager.shared
     private let userDefaults = UserDefaults.standard
-    
-    private init() {}
         
     // MARK: TouchID & FaceID
+    /// Checks the device's ability to authenticate with a FaceID or TouchID and logs into the app using biometric data
     func identifyYourself(completion: @escaping (Bool)->()) {
         let context = LAContext()
         var error: NSError?
@@ -51,7 +47,9 @@ class AuthController {
     
     
     // MARK: Keychain service
+    /// Stores credentials in a keychain and logs into the app
     func saveAndLogin(user: User, completion: @escaping (Bool)->()) {
+        let apiManager = ApiManager()
         apiManager.tryToLogIn(user: user) { [weak self] (result) in
             if result {
                 self?.saveUserData(user: user)
@@ -63,16 +61,19 @@ class AuthController {
     }
     
     private func saveUserData(user: User) {
+        let keychainService = KeychainService()
         keychainService.save(user.password, for: user.username)
         setCurrentUser(account: user.username, key: .currentUser)
     }
     
     
     // MARK: User defaults
+    /// Returns the username "String" from user defaults
     func getCurrentUser(key: CashKey) -> String {
         return userDefaults.string(forKey: key.rawValue) ?? ""
     }
 
+    /// Remembers the current user
     func setCurrentUser(account: String, key: CashKey) {
         userDefaults.setValue(account, forKey: key.rawValue)
     }
